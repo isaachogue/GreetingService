@@ -23,6 +23,5 @@ public class GreetingController {
     public Greeting greeting(@PathVariable("region") String region, HttpServletRequest request) {
         return new Greeting(counter.incrementAndGet(),
                             String.format(template, region));
-    }
-    
+    }    
 }
